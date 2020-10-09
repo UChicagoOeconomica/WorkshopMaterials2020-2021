@@ -1,4 +1,5 @@
 # Workshop 1 Example Code
+# This document contains examples to be covered during the workshop.
 
 # Creating Variables 
 a <- 1
