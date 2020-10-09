@@ -1,5 +1,7 @@
 # Workshop 1 Practice Exercises
 # This document contains practice exercises for workshop attendees. 
+# All exercises can be completed using only the functions used in the examples
+# document.
 
 # Find the reminder from dividing 1298460519 by 27
 
@@ -51,10 +53,10 @@
 
 
 # Use R to determine how many characters there are in 
-#"Oeconomica workshops occur Wednesday evenings at 6:30pm"
+# "Oeconomica workshops occur Wednesday evenings at 6:30pm"
 
 
 # Use R to turn each word in 
-#"Oeconomica workshops occur Wednesday evenings at 6:30pm" into its own string
+# "Oeconomica workshops occur Wednesday evenings at 6:30pm" into its own string
 
 

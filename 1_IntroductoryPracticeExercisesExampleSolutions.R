@@ -3,7 +3,7 @@
 # Note that while each of these are solutions, they are by no means the only
 # solutions to the exercises
 
-
+####### Solutions here; press the arrow or rectangle to view if hidden #######
 
 
 
