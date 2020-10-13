@@ -7,7 +7,7 @@
 1298460519 %% 27
 
 # Define a string variable
-
+str_var <- 'string'
 
 # Define a boolean variable
 
