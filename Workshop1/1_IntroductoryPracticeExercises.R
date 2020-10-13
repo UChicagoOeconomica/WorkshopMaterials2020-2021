@@ -4,7 +4,7 @@
 # document.
 
 # Find the reminder from dividing 1298460519 by 27
-
+1298460519 %% 27
 
 # Define a string variable
 
