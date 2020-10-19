@@ -19,7 +19,6 @@ g = NA
 h = NULL 
 
 # Some basic functions
-
 typeof(f)
 
 is.numeric(a)
