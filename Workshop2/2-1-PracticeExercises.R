@@ -12,6 +12,9 @@
 # how would your answer to the two questions change?
 
 
+# Let X and Y be two independent indicator random variables, with P(X = 1) = p 
+# and P(Y = 1) = r. Find E[(X + Y)^2] in terms of p and r. 
+
 # Show that if E[Y|X] = b, where b is some constant, then Y is mean independent 
 # of X; (X and Y are random variables)
 
