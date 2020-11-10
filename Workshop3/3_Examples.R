@@ -16,7 +16,7 @@ cps_df <- read.csv("Workshop3/cps.csv")
 # Glancing at your data 
 view(txhousing)
 head(cps_df)
-
+txhousing[c(1:3),]
 
 
 # Finding Summary Statistics
@@ -26,6 +26,7 @@ sd(txhousing$sales)
 
 # Be careful about NA values! Instead you may want to use 
 mean(txhousing$sales, na.rm = TRUE)
+quantile(txhousing$sales, na.rm=TRUE)
 
 # Side note on NA values:
 # Removing them completely
