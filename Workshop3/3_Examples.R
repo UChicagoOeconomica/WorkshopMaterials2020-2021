@@ -39,7 +39,7 @@ txhousing_0_for_NA <- txhousing
 txhousing_0_for_NA[is.na(txhousing_0_for_NA)] <- 0
 txhousing_rep_NAs <- replace_na(txhousing, list(sales=0,volume=1,
                                                 listings=0,inventory=1))
-
+# Back to summary statistics
 # Getting several at once
 lapply(txhousing, mean, na.rm=TRUE) #Returns a list
 sapply(txhousing, mean, na.rm=TRUE) #Returns a vector
@@ -55,6 +55,18 @@ tx_housing_summ_df_by_city_no_NAs <- summarise(tx_housing_city_groups,
                                         avg_listings=mean(listings, na.rm=TRUE),
                                         avg_sales=mean(sales, na.rm=TRUE))
 tapply(cps_df$incwage, cps_df$educ, mean)
+by(txhousing$sales, txhousing$month, median, na.rm=TRUE)
+
+# Piping %>%
+city_total_volumes <- by(txhousing$volume, txhousing$city, sum, 
+                         na.rm = TRUE) %>% as.table() %>% as.data.frame()
+
+# Reordering your dataframe
+city_total_volumes <- city_total_volumes[order(city_total_volumes$Freq, 
+                                               decreasing = TRUE),]
+txhousing_sorted_a <- arrange(txhousing, sales)
+txhousing_sorted_d <- arrange(txhousing, desc(sales))
+
 
 # Subsetting the Dataset
 # Keeping or removing variables (2 ways):
@@ -66,11 +78,12 @@ cps_fewer_vars4 <- cps_df[, -c(8, 9, 12)]
 txhousingfirstrows <- txhousing[c(1:100),]
 txhousingnofirstrows <- txhousing[-c(1:100),]
 txhousingsample <- sample_n(txhousing, 300, replace = FALSE)
-
-
-# Dealing with NA values 
-
-
+# By particular conditions
+cps_df_fm1 <- filter(cps_df, sex=="Female")
+cps_df_fm2 <- cps_df[cps_df$sex=="Female",]
+# "," represent "and", "|" represent "or"
+cps_df_w_fm <- cps_df %>% filter(race=="White", sex=="Female")
+cps_df_nw_or_hisp <- cps_df %>% filter(race!="White" | hispan != "Not Hispanic")
 
 # Building New Variables 
 
