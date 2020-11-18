@@ -86,7 +86,15 @@ ggplot(txhousing, aes(x = log(sales), y = median, color = as.factor(month))) +
 ggsave("Workshop4/Output/example_ggplot.png")
 # Sometimes log scales are useful to better fit the data on the graph
 
-cps_df <- read.csv("Workshop4/Data/cps.csv")
+# Note that ggplots can be saved directly to your environment, you don't need to
+# to use recordPlot()
+
+example_ggplot <- ggplot(txhousing, aes(x = listings, y = sales)) + 
+  geom_point() +
+  theme_light()
+print(example_ggplot)
+
+
 
 
 
