@@ -1,6 +1,15 @@
 # Practice Exercises for Workshop 4
 
-# Go to the link below and go through last year's ggplot Tutorial: 
+# Save all your graphs to your output folder
+
+# Go to the link below, go through last year's ggplot tutorial: 
 # https://drive.google.com/file/d/1PySdQOFSgG4S4KPqT2MxfQyNJPxfO90S/view?usp=sharing
+
+
+
+
+# Try making those same graphs (or as similar as possible) without using ggplot2
+
+
 
 
