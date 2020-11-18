@@ -20,5 +20,11 @@
 # Make a graph to examine how labor income changes based on age, sex, race, and 
 # ethnicity
 
-# Make a graph to look at how labor income changes across states 
+# Make a graph to look at how total income changes across states 
+
+# Make a graph that examines the college premium
+
+# Make a graph that examines the gender wage gap
+
+# Have fun making more graphs!
 
