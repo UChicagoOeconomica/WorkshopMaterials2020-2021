@@ -88,7 +88,7 @@ ggplot(as.data.frame(sim_results), aes(x=sim_results)) +
   theme_bw() 
 
 sim_results <- replicate(500, rand_harm(100000))
-# running this line may take a little time 
+# running this line will take a little time 
 ggplot(as.data.frame(sim_results), aes(x=sim_results)) + 
   geom_histogram() + 
   theme_bw() +
