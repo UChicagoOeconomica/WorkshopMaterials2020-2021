@@ -15,6 +15,9 @@
 
 # Write a function that simulates flipping n coins 
 
+# Write a function that finds the minimum power you must take a number to to be
+# larger than some threshhold
+
 
 # Write a function that simulates a poisson random variable without using 
 # dpois, ppois, qpois, or rpois
