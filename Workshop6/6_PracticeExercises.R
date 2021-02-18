@@ -17,6 +17,7 @@
 
 # Write a function that finds the minimum power you must take a number to to be
 # larger than some threshhold
+# Hint: Try a while loop
 
 
 # Write a function that simulates a poisson random variable without using 
